@@ -1,71 +1,44 @@
-🚀 Md Aminul Islam — Portfolio
+🚀 aminul.tech — High-Performance Portfolio
 
 🔗 Live: https://aminul.tech
 
 🔗 GitHub: https://github.com/anikdife
 
-🧠 Overview
+⚡ Overview
 
-A high-performance, modern portfolio showcasing my work across:
+A production-grade portfolio platform engineered to showcase real-world systems, not just UI.
 
-Software Engineering
-Cybersecurity & Distributed Systems
-Data-driven Applications
-Cloud-integrated Web Platforms
+Built with a focus on:
 
-Built with a focus on performance, scalability, and production-grade architecture.
+performance-first architecture
+scalable frontend systems
+real application integration (AI, PDF engine, data pipelines)
+🖼️ Preview
+![Portfolio Preview](./preview.png)
 
+Replace with a screenshot of your homepage (VERY important)
+
+🧠 Why This Portfolio Is Different
+
+Most portfolios are static.
+
+This one is engineered.
+
+⚙️ Uses Web Workers for heavy processing (PDF engine)
+⚡ Optimized for edge delivery (Cloudflare)
+🧩 Built with modular architecture
+🔗 Integrated with real production apps
+🧠 Reflects systems thinking, not just UI skills
 ⚙️ Tech Stack
 {
   "frontend": ["React", "TypeScript", "Vite", "TailwindCSS"],
   "state_management": ["Zustand"],
   "3D_ui": ["Three.js", "react-three-fiber"],
-  "pdf_engine": ["pdf.js", "pdf-lib", "Web Workers"],
-  "backend_services": ["Firebase (Auth, Firestore, Storage)"],
-  "cloud": ["Cloudflare Pages", "Firebase Hosting"],
+  "processing": ["Web Workers", "pdf.js", "pdf-lib"],
+  "backend": ["Firebase (Auth, Firestore, Storage)"],
+  "cloud": ["Cloudflare Pages"],
   "tooling": ["GitHub", "VS Code", "Copilot"]
 }
-✨ Key Features
-⚡ Ultra-fast loading via edge deployment (Cloudflare)
-🧩 Modular component architecture
-🎯 Fully responsive (mobile → desktop)
-🌐 SEO-optimized structure
-🧠 Smart state handling (Zustand)
-📄 Advanced document processing workflows
-🧵 Web Worker offloading for heavy tasks
-🎨 Premium UI/UX with smooth animations
-🧪 Featured Projects
-🔹 PDFStudio.tech
-
-Advanced in-browser PDF editor
-
-Client-side PDF rendering & editing
-Page operations (merge, split, extract, rotate)
-Thumbnail caching system
-Web Worker-based processing
-Firebase-integrated user system
-
-👉 https://pdfstudio.tech
-
-🔹 Arousha.art
-
-NAPLAN preparation platform
-
-AI-assisted writing evaluation pipeline
-Structured scoring via API processing
-Firestore-backed session tracking
-Performance analytics (score, weakness, improvement)
-
-👉 https://arousha.art
-
-🔹 AyahVerse (Android)
-
-Quran-based learning + analysis system
-
-Multi-reciter audio integration
-Tafsir API integration
-Word-level linguistic breakdown
-Planned ML-based Tajweed evaluation
 🏗️ Architecture
 Client (React + Vite)
     ↓
@@ -74,41 +47,77 @@ State Layer (Zustand)
 Processing Layer (Web Workers)
     ↓
 External Services
-    ├── Firebase (Auth / DB / Storage)
+    ├── Firebase (Auth / Firestore / Storage)
     ├── Supabase (data + assets)
-    └── APIs (AI / Tafsir / Analytics)
+    └── AI / External APIs
     ↓
-Deployment (Cloudflare Edge)
+Edge Deployment (Cloudflare Pages)
+⚡ Engineering Highlights
+🧵 Web Worker Offloading
+Heavy PDF operations run outside the main thread → no UI blocking
+⚡ Edge-Optimized Deployment
+Hosted on Cloudflare → low latency globally
+🧠 State Architecture (Zustand)
+Lightweight, scalable state control without Redux overhead
+📄 Advanced Document Pipeline
+merge / split / extract / rotate
+thumbnail caching
+page-level operations
+🧩 Component-Driven Design
+Clean separation → scalable UI system
+🧪 Featured Projects
+🔹 PDFStudio.tech
+
+Advanced browser-based PDF engine
+
+👉 https://pdfstudio.tech
+
+Client-side PDF rendering (pdf.js)
+Page manipulation engine
+Web Worker processing layer
+Firebase-integrated system
+🔹 Arousha.art
+
+AI-powered NAPLAN preparation system
+
+👉 https://arousha.art
+
+Writing submission → AI evaluation pipeline
+Structured scoring (strength / weakness / improvement)
+Firestore-based session tracking
+Real-time feedback UX
+🔹 AyahVerse (Android)
+
+Quran learning + analysis platform
+
+Multi-reciter audio
+Tafsir integration
+Word-level linguistic analysis
+Planned ML-based Tajweed correction
 🚀 Getting Started
-1. Clone repo
 git clone https://github.com/anikdife/aminul-tech.git
 cd aminul-tech
-2. Install dependencies
 npm install
-3. Run locally
 npm run dev
-4. Build
+📦 Build
 npm run build
 🌍 Deployment
-
-This project is deployed on Cloudflare Pages
-
-Build config:
-Build command: npm run build
-Output directory: dist
+Platform: Cloudflare Pages
+Build Command: npm run build
+Output Directory: dist
 📈 Performance Strategy
-Code splitting via Vite
+Code splitting (Vite)
 Lazy loading components
-Web Worker offloading for heavy computations
-Edge delivery via Cloudflare CDN
+Web Worker offloading
+Edge CDN delivery
 Optimized asset pipeline
 🔐 Security Considerations
 Environment variables via VITE_*
-Firebase secure rules (Auth-based access)
+Firebase access control rules
 No sensitive logic exposed client-side
 API isolation for AI processing
 📬 Contact
 
-📧 Email: anik.dife@gmail.com
+📧 anik.dife@gmail.com
 
-🌐 Portfolio: https://aminul.tech
+🌐 https://aminul.tech
