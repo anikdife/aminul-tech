@@ -1,5 +1,5 @@
 /* ============================================================
-   Navbar: scroll behaviour & active link tracking
+   Navbar: scroll behavior & active link tracking
    ============================================================ */
 const navbar = document.getElementById('navbar');
 const navToggle = document.getElementById('nav-toggle');
@@ -142,10 +142,13 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+const STAGGER_GROUP_SIZE = 4;
+const STAGGER_DELAY_MS = 80;
+
 fadeElements.forEach((el, i) => {
   el.classList.add('fade-hidden');
-  // Stagger cards within the same parent
-  el.style.transitionDelay = `${(i % 4) * 80}ms`;
+  // Stagger cards within the same parent group
+  el.style.transitionDelay = `${(i % STAGGER_GROUP_SIZE) * STAGGER_DELAY_MS}ms`;
 });
 
 const fadeObserver = new IntersectionObserver(
@@ -180,11 +183,6 @@ contactForm.addEventListener('submit', (e) => {
     return;
   }
 
-  if (!isValidEmail(email)) {
-    showStatus('Please enter a valid email address.', 'error');
-    return;
-  }
-
   // Simulate sending (replace with real API call when ready)
   const submitBtn = contactForm.querySelector('button[type="submit"]');
   submitBtn.disabled = true;
@@ -205,8 +203,4 @@ function showStatus(msg, type) {
     formStatus.textContent = '';
     formStatus.className = 'form-status';
   }, 5000);
-}
-
-function isValidEmail(email) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
