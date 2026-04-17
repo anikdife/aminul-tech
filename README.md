@@ -205,35 +205,3 @@ Output Directory: dist
 
 📧 [anik.dife@gmail.com](mailto:anik.dife@gmail.com)
 🌐 https://aminul.tech
-
----
-
-## ⭐ What This Represents
-
-This is not just a portfolio.
-
-It demonstrates:
-
-* real-world system design
-* performance engineering
-* production-ready thinking
-
----
-
-## 🧩 Future Enhancements
-
-* [ ] Blog system (technical writing)
-* [ ] Interactive project demos
-* [ ] Analytics dashboard
-* [ ] Dark/light mode system
-* [ ] CI/CD pipeline (GitHub Actions)
-
----
-
-## ✅ Final Notes
-
-* Make sure this file exists:
-
-/public/preview.png
-
-* Pin this repo on GitHub for maximum visibility
