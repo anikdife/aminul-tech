@@ -94,6 +94,7 @@ function type() {
     delay = 400;
   }
 
+  clearTimeout(typingTimeout);
   typingTimeout = setTimeout(type, delay);
 }
 
