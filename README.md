@@ -14,7 +14,7 @@ performance-first architecture
 scalable frontend systems
 real application integration (AI, PDF engine, data pipelines)
 🖼️ Preview
-![Portfolio Preview](./preview.png)
+![Portfolio Preview](./public/preview.png)
 
 Replace with a screenshot of your homepage (VERY important)
 
